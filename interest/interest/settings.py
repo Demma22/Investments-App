@@ -25,7 +25,7 @@ SECRET_KEY = "django-insecure-*a14an2%!zi^fe^x1ps&$w8p8x=piud08^2uwuaf!_ww1c7n(1
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['uap.onrender.com']
+ALLOWED_HOSTS = ['uap.onrender.com','127.0.0.1']
 
 
 # Application definition
@@ -37,7 +37,8 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    "uap"
+    "uap",
+    "django.contrib.humanize",
 ]
 
 MIDDLEWARE = [

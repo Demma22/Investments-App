@@ -1,4 +1,6 @@
 {% load static %} 
+{% load humanize %}
+
 <!DOCTYPE html>
 
 <html lang="en">
@@ -14,17 +16,17 @@
   <div class="card-container">
     <div class="card" style="width: 25rem;">
       <div class="card-body">
-        <h1 class="card-title"><b>Total Deposit</b> : UGX {{ total_deposit }}</h1>
+        <h1 class="card-title">Total Deposit: UGX {{ total_deposit|intcomma }}</h1>
         </div>
     </div>
     <div class="card" style="width: 25rem;">
       <div class="card-body">
-        <h1 class="card-title">Interest: UGX {{ interest }}</h1>
+        <h1 class="card-title">Interest: UGX {{ interest|intcomma }}</h1>
         </div>
     </div>
     <div class="card" style="width: 25rem;">
       <div class="card-body">
-        <h1 class="card-title"><b>Running Investments: UGX {{ running_investments }}</h1>
+        <h1 class="card-title">Running Investments: UGX {{ running_investments|intcomma }}</h1>
           </div>
     </div>
   </div>
