@@ -13,12 +13,13 @@ html,body {
   -webkit-background-size: cover;
   background-size: cover;
   background-repeat: no-repeat;
+  margin: 0; /* Add margin: 0 to reset default margin */
+  padding: 0; /* Add padding: 0 to reset default padding */
 }
   /* Reset some default margin and padding */
 * {
-  /* box-sizing: border-box; */
-  margin: 0;
-  padding: 0;
+  box-sizing: border-box;
+ 
 }
   
   /* Optional: Add some basic styling for the cards */
@@ -40,3 +41,17 @@ html,body {
     padding-left: 100px;
     padding-right: 100px;
   }
+
+/* Media Query for phone-sized screens */
+@media (max-width: 768px) {
+  /* Adjust styles for small screens here */
+  .card-container {
+    flex-direction: column; /* Stack the cards vertically on small screens */
+    align-items: center; /* Center the cards horizontally on small screens */
+    padding: 20px; /* Reduce padding for better spacing on small screens */
+  }
+
+  .card {
+    margin-bottom: 20px; /* Add spacing between the stacked cards */
+  }
+}
